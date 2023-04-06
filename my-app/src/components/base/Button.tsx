@@ -1,13 +1,24 @@
+import styled from "styled-components";
+import { PropsWithChildren } from "react";
+
 type Props = {
-    children: string | JSX.Element,
+    clickAction: () => void;
 }
 
-const Button = ({children} : Props) => {
+const Button = ({children, clickAction} : PropsWithChildren<Props>) => {
     return (
-        <button>
+        <ButtonWrapper onClick={clickAction}>
             {children}
-        </button>
+        </ButtonWrapper>
     )
 }
 
+const ButtonWrapper = styled.button `
+    height: 50px;
+    width: 150px;
+    background-color: #33be5d;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+`
 export default Button;
