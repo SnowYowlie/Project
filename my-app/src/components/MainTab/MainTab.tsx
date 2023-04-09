@@ -1,8 +1,10 @@
+import { FlexContainer } from "../styled/FlexContainer";
+
 const MainTab = () => {
     return (
-        <div>
+        <FlexContainer className="main_tab">
             MainTab
-        </div>
+        </FlexContainer>
     )
 }
 

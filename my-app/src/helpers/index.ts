@@ -1,6 +1,6 @@
 export const generateSpotifyURL = () => {
     const clientID = '21bfb8d7a2974d60b7156e66adfcff33';
-    const redirectURI = "http://localhost:3000";
+    const redirectURI = window.location.origin;
     const spotifyURL = "https://accounts.spotify.com/authorize";
     const scopes = [
         'user-read-email', 'user-read-private', 'user-library-modify' , 'user-library-read', 'user-read-playback-position', 'user-top-read', 'user-read-recently-played', 'user-follow-modify', 'user-follow-read',

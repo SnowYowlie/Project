@@ -1,18 +1,14 @@
 import styled from "styled-components";
+import FlexContainerType from "../../types/FlexContainer";
 
-type FlexContainer = {
-    align?: string,
-    justify?: string,
-    direction?: string,
-    gap?: string,
-}
-
-export const FlexContainer = styled.div <FlexContainer>`
+export const FlexContainer = styled.div <FlexContainerType>`
     display: flex;
-    align-items: ${({align}) => align || 'center'};
-    justify-content: ${({justify}) => justify || 'center'};
+    align-items: ${({align}) => align || 'start'};
+    justify-content: ${({justify}) => justify || 'start'};
     flex-direction: ${({direction}) => direction || 'row'};
     gap: ${({gap}) => gap || '0'};
-    height: 100%;
-    width: 100%;
+    height: ${({height}) => height || '100%'};
+    width: ${({width}) => width || '100%'};
+    flex-basis: ${({flexBasis}) => flexBasis || '0'};
+    margin: ${({margin}) => margin || '0'};
 `
