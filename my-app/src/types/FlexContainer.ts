@@ -7,6 +7,8 @@ type FlexContainerType = {
     width?: string,
     flexBasis?: string,
     margin?: string,
+    padding?: string,
+    flex_grow?: string
 }
 
 export default FlexContainerType;

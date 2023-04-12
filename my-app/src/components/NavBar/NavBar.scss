@@ -1,14 +1,12 @@
 .navigation-bar {
     background-color:rgb(94, 18, 65);
-    padding: 20px; 
     overflow: hidden;
+    img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
     .navigation-bar__main {
         border-bottom: 1px solid white;
         width: 100%;
     }
-}
-
-img {
-    width: 150px;
-    margin-bottom: 20px;
 }

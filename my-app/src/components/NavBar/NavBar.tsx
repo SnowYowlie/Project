@@ -8,7 +8,7 @@ import UsersPlayLists from "../UsersPlaylists/UsersPlaylists";
 
 const NavBar = () => {
     return (
-        <FlexContainer direction="column" className="navigation-bar" flexBasis="15%" height="90vh">
+        <FlexContainer direction="column" className="navigation-bar" flexBasis="15%" height="90vh" padding="15px">
             <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png" alt="Logo" />
             <div className="navigation-bar__main">
                 <FlexContainer height="25px" align="center" margin="0 0 10px" gap="10px">

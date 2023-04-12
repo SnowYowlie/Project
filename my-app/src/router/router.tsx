@@ -6,7 +6,7 @@ import PlaylistPage, { playListLoader } from "../pages/PlaylistPage/PlaylistPage
 
 export const router = createBrowserRouter(createRoutesFromElements(
     <>
-    <Route path="/Spotify" loader={mainPageLoader} element={<MainPage/>}>
+    <Route path="/" loader={mainPageLoader} element={<MainPage/>}>
       <Route index element={<MainTab />} />
       <Route path="playlist/:id" loader={playListLoader} element={<PlaylistPage />} />
     </Route>

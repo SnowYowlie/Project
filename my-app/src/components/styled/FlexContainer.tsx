@@ -7,8 +7,10 @@ export const FlexContainer = styled.div <FlexContainerType>`
     justify-content: ${({justify}) => justify || 'start'};
     flex-direction: ${({direction}) => direction || 'row'};
     gap: ${({gap}) => gap || '0'};
-    height: ${({height}) => height || '100%'};
-    width: ${({width}) => width || '100%'};
-    flex-basis: ${({flexBasis}) => flexBasis || '0'};
+    height: ${({height}) => height || 'auto'};
+    width: ${({width}) => width || 'auto'};
+    flex-basis: ${({flexBasis}) => flexBasis || 'auto'};
     margin: ${({margin}) => margin || '0'};
+    padding: ${({padding}) => padding || '0'};;
+    flex-grow: ${({flex_grow}) => flex_grow || '0'};
 `

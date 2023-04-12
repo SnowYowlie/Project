@@ -1,0 +1,22 @@
+.playlist__page {
+    padding: 0 35px 0;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    h1 {
+        font-size: 3rem;
+    }
+    img {
+        width: 232px;
+    }
+    .playlist__page-container {
+        overflow-y: hidden;
+    }
+    .playlist__item {
+        position: relative;
+        &::before {
+        content: "•";
+        display: inline;
+        margin: 0 6px;
+    }}
+}

@@ -5,14 +5,18 @@ import playlistService from "../../service/playlistService";
 import { Outlet } from "react-router-dom";
 import { FlexContainer } from "../../components/styled/FlexContainer";
 import Player from "../../components/Player/Player";
+import Navigation from "../../components/Navigation/Navigation";
 
 const MainPage = () => {
     return (
         <section className="mainPage__wrapper">
-            <FlexContainer direction="column">
-                <FlexContainer  flexBasis="100%">
+            <FlexContainer direction="column" height="100%">
+                <FlexContainer  flexBasis="100%" width="100%">
                     <NavBar/>
-                    <Outlet/>
+                    <FlexContainer direction="column" flex_grow="1" height="90vh">
+                        <Navigation/>
+                        <Outlet/>
+                    </FlexContainer>
                 </FlexContainer>
                 <Player/>
             </FlexContainer>

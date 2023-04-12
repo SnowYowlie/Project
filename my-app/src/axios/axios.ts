@@ -1,9 +1,5 @@
 import axios from "axios";
 
-type locationwindow = {
-    Location: string,
-}
-
 const axiosInstance = axios.create({
     baseURL: "https://api.spotify.com/v1/"
 })
