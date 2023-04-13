@@ -1,0 +1,18 @@
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: none;
+}
+
+.playlist__track {
+    &:hover {
+        background-color: rgba(78, 77, 77, 0.5);
+    }
+}

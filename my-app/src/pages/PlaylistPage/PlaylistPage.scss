@@ -1,15 +1,27 @@
-.playlist__page {
-    padding: 0 35px 0;
+.playlist_page {
+    padding: 20px 35px 0;
     overflow-y: scroll;
     height: 100vh;
     width: 100%;
+    background-color: rgba(26, 24, 24, 0.623);
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
-    img {
+    .playlist_img {
         width: 232px;
+        height: 232px;
     }
-    .playlist__page-container {
+    .image {
+        height: 100%;
+        padding: 0;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .info_bar {
+        border-bottom: 1px solid transparent;
+        color: #b3b3b3;
+    }
+    .playlist_page__container {
         overflow-y: hidden;
     }
     .playlist__item {

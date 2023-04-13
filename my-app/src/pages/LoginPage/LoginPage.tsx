@@ -8,7 +8,7 @@ const LoginPage = () => {
     }
     return (
         <section className="login__wrapper">
-            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png" alt="Logo" />
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png" alt="Logo" className="login_img"/>
             <Button clickAction={connectToApp}>
                 Connect
             </Button>

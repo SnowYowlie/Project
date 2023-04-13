@@ -11,9 +11,6 @@ const playlistService = {
         const { data }: AxiosResponse<playlist> = await axiosInstance.get(`playlists/${id}`)
         return data;
     },
-    // async getPlaylistItems() {
-
-    // }
 } 
 
 export default playlistService;

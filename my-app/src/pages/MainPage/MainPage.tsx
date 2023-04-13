@@ -8,17 +8,18 @@ import Player from "../../components/Player/Player";
 import Navigation from "../../components/Navigation/Navigation";
 
 const MainPage = () => {
+    let token: string | null = localStorage.getItem('authToken');
     return (
         <section className="mainPage__wrapper">
             <FlexContainer direction="column" height="100%">
                 <FlexContainer  flexBasis="100%" width="100%">
                     <NavBar/>
-                    <FlexContainer direction="column" flex_grow="1" height="90vh">
+                    <FlexContainer direction="column" flex_grow="1" height="90vh" width="80%">
                         <Navigation/>
                         <Outlet/>
                     </FlexContainer>
                 </FlexContainer>
-                <Player/>
+                <Player token = {token}/>
             </FlexContainer>
         </section>
     )
